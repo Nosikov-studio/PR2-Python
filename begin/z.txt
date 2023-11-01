@@ -1,0 +1,321 @@
+1)[1-л2-1] Дана последовательность чисел длиной n.
+Найти первое (левое) вхождение положительного числа X в ней 
+или вывести -1, если число X не встречалось.
+
+2)[1-л2-2] Дана последовательность чисел длиной n.
+Найти последнее (правое) вхождение  числа X в неё 
+или вывести -1, если число X не встречалось.
+
+3)[1-л2-3] 
+
+4)[1-л2-4] Дана последовательность чисел длиной N(N>1).
+Найти максимальное число в последовательности и 
+второе по величине число (такое, что будет максимальным,
+если вычеркнуть из последовательности одно максимальное число).
+
+5)[1-л2-5]Дана последовательность чисел длиной N.
+Найти минимальное четное число в последовательности или
+вывести -1, если такого не существует.
+
+6)[1-л2-6] Дана последовательность слов. 
+Вывести все самые короткие слова через пробел.
+
+7)[1-л2-7] Игра PitCraft происходит в двухмерном мире, который
+состоит из блоков размером 1 на 1 метр. остров игрока представляет
+собой набор столбцов различной высоты, состоящий из блоков камня 
+и окруженный морем. На острове пошел сильный дождь, который 
+заполнил водой все низины, а не поместивщаяся в них вода стекла
+в море, не увеличив его уровень.
+По ландшафту острова определите, сколько блоков воды осталось 
+после дождя в низинах на острове.  
+
+8)[1-л2-8] Дана строка (возможно пустая), состоящая из букв A-Z:
+AAAABBBCCXYZDDDDEEEFFF...
+Нужно написать функцию RLE, которая на выходе даст строку вида:
+A4B3C2XYZD4E3F3... И сгенерирует ошибку, если на вход пришла 
+не валидная строка. 
+ПОЯСНЕНИЯ. Если символ встречается 1 раз, то он остается без изменений.
+Если символ повторяется более 1 раза, то к нему добавляется 
+количество повторений.
+
+****************************************************************
+[1-л3-2] Дана последовательность положительных чисел длиной N и число X.
+Нужно найти два различных числа A и B из последовательности, такие что
+A+B=X или вернуть 0,0, если такой пары нет.
+
+[1-л3-2] Дан словарь из N слов, длина каждого не превосходит K.
+В записи из каждого M слов текста (каждое длиной до K) 
+может быть пропущена одна буква. Для каждого слова сказать, входит ли
+оно (возможно с одной пропущенной буквой) в словарь.
+****************************************************************
+****************************************************************
+
+[2-blind75-1. Two Sum]
+Дан массив целых чисел nums и целое число target, нужно вернуть индексы двух чисел из массива, которые в сумме образуют target.
+
+Каждый массив точно будет иметь ровно одно решение и нельзя использовать один и тот же элемент дважды.
+
+Вы можете вернуть ответ в любом порядке.
+***
+
+[2-blind75-121. Best Time to Buy and Sell Stock]
+https://www.youtube.com/watch?v=0ZdTcCAqirk
+https://www.youtube.com/watch?v=8Zl6DoLf9qU
+
+Вам дан массив цен, где цены[i] — цена данной акции на i-й день.
+Вы хотите максимизировать свою прибыль, выбрав один день для покупки одной акции и выбрав другой день в будущем для продажи этой акции.
+Верните максимальную прибыль, которую вы можете получить от этой сделки. Если вы не можете получить никакой прибыли, верните 0.
+  
+***
+
+[2-blind75-217. Contains Duplicate]
+https://site.ada.edu.az/~medv/acm/Leetcode/217-Contains-Duplicate.htm
+
+Имеется массив целых чисел. Определите, содержит ли он дубли. 
+Функция должна вернуть true, если некоторое число встречается в массиве более одного раза. 
+Вернуть false, если все элементы массива различны.
+***
+
+[2-blind75-238. Product of Array Except Self]
+https://site.ada.edu.az/~medv/acm/Leetcode/238-Product-of-Array-Except-Self.htm
+
+Задан массив из n (n > 1) целых чисел nums. 
+Вернуть массив, в котором output[i] равно произведению всех элементов из nums кроме nums[i].
+Решите задачу за время O(n) и константную память.
+Например, для массива [1,2,3,4] следует вернуть [24,12,8,6].
+***
+
+[2-blind75-53. Maximum Subarray]
+https://site.ada.edu.az/~medv/acm/Leetcode/53-Maximum-Subarray.htm
+
+Найдите непрерывную последовательность чисел в заданном массиве (содержащую как минимум одно число), 
+сумма элементов которой наибольшая.
+Например, для массива [-2,1,-3,4,-1,2,1,-5,4] искомой подпоследовательностью будет [4,-1,2,1], ее сумма sum = 6.
+***
+
+[2-blind75-152. Maximum Product Subarray]
+https://www.youtube.com/watch?v=5pUTHKIA-24
+
+Given an integer array nums, find a 
+subarray  that has the largest product, and return the product.
+The test cases are generated so that the answer will fit in a 32-bit integer.
+***
+
+[2-blind75-153. Find Minimum in Rotated Sorted Array]
+https://www.youtube.com/watch?v=HYRtk22pWv4
+
+Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
+
+[4,5,6,7,0,1,2] if it was rotated 4 times.
+[0,1,2,4,5,6,7] if it was rotated 7 times.
+Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
+
+Given the sorted rotated array nums of unique elements, return the minimum element of this array.
+
+You must write an algorithm that runs in O(log n) time.
+
+***
+
+[2-blind75-33. Search in Rotated Sorted Array]
+https://www.youtube.com/watch?v=Xh4RMdN2eec
+
+There is an integer array nums sorted in ascending order (with distinct values).
+
+Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
+
+Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+***
+
+[2-blind75-15. 3Sum]
+https://www.youtube.com/watch?v=siPqjCR0zVg
+
+Given an integer array nums, return all the triplets 
+[nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+
+Notice that the solution set must not contain duplicate triplets.
+***
+
+[2-blind75-11. Container With Most Water]
+https://www.youtube.com/watch?v=cdnLWKD6tx0
+
+You are given an integer array height of length n. 
+There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+
+Return the maximum amount of water a container can store.
+
+Notice that you may not slant the container.
+***
+
+--------------------------------------------------Binary------------------------------------------
+
+[2-blind75-371. Sum of Two Integers]
+https://www.youtube.com/watch?v=W_Vja_AFKFg
+
+Given two integers a and b, return the sum of the two integers without using the operators + and -.
+***
+
+[2-blind75-191. Number of 1 Bits]
+https://site.ada.edu.az/~medv/acm/Leetcode/191-Number-of-1-Bits.htm
+
+Напишите функцию, которая в беззнаковом целом числе вычисляет количество 1-битов (вес Хемминга).
+
+Например, в 32-битовом целом числе ’11', имеющем бинарное представление
+
+00000000000000000000000000001011
+
+имеется три единичных бита. Функция должна вернуть 3.
+***
+[2-blind75-338. Counting Bits]
+https://www.youtube.com/watch?v=yuyL1iJFQWU
+
+Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), 
+ans[i] is the number of 1's in the binary representation of i.
+***
+[2-blind75-268. Missing Number]
+https://site.ada.edu.az/~medv/acm/Leetcode/268-Missing-Number.htm
+
+Задан массив, содержащий n различных чисел из промежутка 0,1 , 2, ..., n. Найдите пропущенное число.
+Например, если nums = [0, 1, 3], то возвращаемое значение равно 2.
+***
+
+[2-blind75-190. Reverse Bits]
+https://site.ada.edu.az/~medv/acm/Leetcode/Reverse-Bits.htm
+
+Обернуть биты в 32-битовом беззнаковом целом числе.
+Например, число 43261596 в двоичной системе представляется как
+00000010100101000001111010011100
+вернет 964176192, что в двоичной системе представляется как
+00111001011110000010100101000000
+
+***
+
+----------------------------------------Dynamic Programming----------------------------------------------------
+[2-blind75-70. Climbing Stairs]
+https://www.youtube.com/watch?app=desktop&v=2WKsL1TW5eg
+
+You are climbing a staircase. It takes n steps to reach the top.
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+***
+[2-blind75-322. Coin Change]
+https://www.youtube.com/watch?v=CVPsza1iULQ
+You are given an integer array coins representing coins of different denominations 
+and an integer amount representing a total amount of money.
+Return the fewest number of coins that you need to make up that amount. 
+If that amount of money cannot be made up by any combination of the coins, return -1.
+You may assume that you have an infinite number of each kind of coin.
+***
+
+[2-blind75-300. Longest Increasing Subsequence]
+https://www.youtube.com/watch?v=-LW65LJwbOI
+Given an integer array nums, return the length of the longest strictly increasing 
+subsequence.
+***
+
+[2-blind75-1143. Longest Common Subsequence]
+https://habr.com/ru/companies/karuna/articles/725552/
+
+Given two strings text1 and text2, return the length of their longest common subsequence. 
+If there is no common subsequence, return 0.
+
+A subsequence of a string is a new string generated from the original string 
+with some characters (can be none) deleted without changing the relative order of the remaining characters.
+
+For example, "ace" is a subsequence of "abcde".
+A common subsequence of two strings is a subsequence that is common to both strings.
+***
+[2-blind75-139. Word Break]
+https://www.youtube.com/watch?v=GinrKDPx0A8
+
+Given a string s and a dictionary of strings wordDict, 
+return true if s can be segmented into a space-separated sequence of one or more dictionary words.
+Note that the same word in the dictionary may be reused multiple times in the segmentation.
+***
+
+[2-blind75-377. Combination Sum IV]
+https://leetcode.com/problems/combination-sum-iv/
+
+Given an array of distinct integers nums and a target integer target, 
+return the number of possible combinations that add up to target.
+
+The test cases are generated so that the answer can fit in a 32-bit integer.
+***
+[2-blind75-198. House Robber]
+https://www.youtube.com/watch?v=IfcS6hSEd6g
+
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, 
+the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected 
+and it will automatically contact the police if two adjacent houses were broken into on the same night.
+Given an integer array nums representing the amount of money of each house, 
+return the maximum amount of money you can rob tonight without alerting the police.
+***
+
+[2-blind75-213. House Robber II]
+https://www.youtube.com/watch?app=desktop&v=YxwKXFstR2o
+
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. 
+All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. 
+Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police 
+if two adjacent houses were broken into on the same night.
+Given an integer array nums representing the amount of money of each house, 
+return the maximum amount of money you can rob tonight without alerting the police.
+
+***
+[2-blind75-91. Decode Ways]
+https://www.youtube.com/watch?v=dAeTMDCpEtE
+A message containing letters from A-Z can be encoded into numbers using the following mapping:
+
+'A' -> "1"
+'B' -> "2"
+...
+'Z' -> "26"
+To decode an encoded message, 
+all the digits must be grouped then mapped back into letters using the reverse of the mapping above 
+(there may be multiple ways). For example, "11106" can be mapped into:
+"AAJF" with the grouping (1 1 10 6)
+"KJF" with the grouping (11 10 6)
+Note that the grouping (1 11 06) is invalid because "06" cannot be mapped into 'F' since "6" is different from "06".
+Given a string s containing only digits, return the number of ways to decode it.
+The test cases are generated so that the answer fits in a 32-bit integer.
+***
+
+[2-blind75-62. Unique Paths]
+https://www.youtube.com/watch?v=ui_wBMqyizA
+
+There is a robot on an m x n grid. The robot is initially located at the top-left corner (i.e., grid[0][0]). 
+The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1]). 
+The robot can only move either down or right at any point in time.
+Given the two integers m and n, 
+return the number of possible unique paths that the robot can take to reach the bottom-right corner.
+The test cases are generated so that the answer will be less than or equal to 2 * 109.
+***
+
+[2-blind75-55. Jump Game]
+https://www.youtube.com/watch?v=DGKZb3EciJI
+You are given an integer array nums. You are initially positioned at the array's first index, 
+and each element in the array represents your maximum jump length at that position.
+Return true if you can reach the last index, or false otherwise.
+***
+--------------------------------Graph-----------------------------------------
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+***************
+[1] Тренировки по алгоритмам от Яндекса
+[2] Leetcode
+
