@@ -17,26 +17,33 @@ for i in range(8):
     c1 = с.split()
     K += c1
 N = 8
-M = [[0, 0, 0, 0, 0, 0, 0, 0]*N]*N
+# M = [[0]*N]*N
+M = [[0 for j in range(8)] for i in range(8)]
 
 x = 0
 y = 0
 xi = 0
 yi = 0
+y1 = 0
+y2 = 0
 st = ""
 for i in range(1, len(K)+1):
-    xi = int(K[i*2-2])
-    yi = int(K[i*2-1])
-    if M[xi-1][yi-1] == 1:
+    xi = int(K[i*2-2])-1
+    yi = int(K[i*2-1])-1
+    if M[xi][yi] == 1:
         st = "YES"
         break
-    else:
-        for y in range(1, 9):
-            M[xi-1][y-1] = 1
-        for x in range(1, 9):
-            M[x-1][yi-1] = 1
-            M[x-1][x+(yi-xi)-1] = 1
-            M[x-1][-x+(yi+xi)-1] = 1
+    for y in range(0, 8):
+        M[xi][y] = 1
+
+    for x in range(0, 8):
+        M[x][yi] = 1
+        y1 = x+(yi-xi)
+        y2 = -x+(yi+xi)
+        if y1 >= 0 and y1 <= 7:
+            M[x][y1] = 1
+        if y2 >= 0 and y2 <= 7:
+            M[x][y2] = 1
 
 
 if st != "YES":
