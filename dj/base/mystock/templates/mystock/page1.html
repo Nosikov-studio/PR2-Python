@@ -1,0 +1,31 @@
+{% extends 'mystock/layout.html' %} 
+{% load static %}
+{% block mytitle %} dok1 {% endblock %}
+
+{%block mycontent %}
+
+<p>page1</p>
+{% include 'mystock/text.html' %} 
+<a href="{% url 'p2' %}">link on page2</a>
+<br/>
+{% load static %}
+<img src="{% static 'mystock/img/djan.jpg' %}">
+<br/>
+{{ w }} 
+<br/>
+<br/>
+<p>{{ w.verben}} </p>
+<br/>
+<br/>
+<table border="1" align="center" class="table mt-5 table bordered table-striped table-hover">
+    <tbody>
+        {% for w in w %}
+        <tr> 
+        <td>{{ w.verben }}</td>
+        <td>{{ w.verbru }}</td> 
+        <td>{{ w.text }}</td>
+        </tr> 
+        {% endfor %}
+    </tbody>
+</table> 
+{% endblock %}
